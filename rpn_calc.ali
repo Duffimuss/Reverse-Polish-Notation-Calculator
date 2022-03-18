@@ -1,0 +1,118 @@
+V "GNAT Lib v2014"
+M P W=b
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U rpn_calc%b		rpn_calc.adb		ddd37512 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bignumpkg%s		bignumpkg.adb		bignumpkg.ali
+W bignumpkg.signed%s	bignumpkg-signed.adb	bignumpkg-signed.ali
+W stackpkg%s		stackpkg.adb		stackpkg.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-charac.ads		20140406181359 2d3ec45b ada.characters%s
+D a-chahan.ads		20140406181359 1601a50f ada.characters.handling%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181359 69f99942 ada.finalization%s
+D a-inteio.ads		20140406181359 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140406181358 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20140406181355 1a984740 ada.streams%s
+D a-tags.ads		20140406181357 dc4d0634 ada.tags%s
+D a-textio.ads		20140406181359 386df5d4 ada.text_io%s
+D a-tiinio.ads		20140406181359 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20140406181359 f9eb8f06 ada.unchecked_conversion%s
+D bignumpkg.ads		20180409174509 7bc27e49 bignumpkg%s
+D bignumpkg-signed.ads	20180410043020 2f2a334e bignumpkg.signed%s
+D interfac.ads		20140406181359 69adb1b9 interfaces%s
+D i-cstrea.ads		20140406181357 febc86ed interfaces.c_streams%s
+D rpn_calc.adb		20180412031525 efb4a6be rpn_calc%b
+D stackpkg.ads		20180409190517 bea847d4 stackpkg%s
+D stackpkg.adb		20180412032508 9d72ce43 stackpkg%b
+D system.ads		20140406181356 bd760655 system%s
+D s-crtl.ads		20140406181356 2c012597 system.crtl%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-ficobl.ads		20140406181355 078245e4 system.file_control_block%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181359 4ff27390 system.finalization_root%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181357 542f33d0 system.pool_global%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181355 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140406181355 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181357 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181355 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181357 b16154c2 system.storage_pools%s
+D s-traent.ads		20140406181355 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 17|1r6 1r23 2r6 2r31 5r6 5r35 72r10 78r13
+X 2 a-charac.ads
+16K13*Characters 18e19 17|5r10 5r39
+X 3 a-chahan.ads
+36K24*Handling 159e28 17|5w21 5r50
+50V13*Is_Digit{boolean} 17|74s13
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 17|2w10 2r35
+X 10 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 1r27 72r14 78r17
+169U14*Skip_Line 17|70s10
+184V13*End_Of_File{boolean} 17|67s17
+206U14*Get 17|72s22 78s25
+215U14*Look_Ahead 17|68s7
+X 13 bignumpkg.ads
+5K9*BigNumPkg 41e14 17|3w6 3r21 4r6 4r28
+6A14*BigNum(integer)
+X 14 bignumpkg-signed.ads
+3K19*Signed 46e21 17|4w16 4r38
+5A9*Signed_BigNum<13|6A14> 17|16r44 16r66 17r19 55r62 59r16 63r14 64r14
+30V14*"+"{5A9}<13|23p18> 17|22s25
+31V14*"-"{5A9} 17|24s25
+32V14*"*"{5A9}<13|24p18> 17|26s25
+34U14*Put<13|30p19> 17|87s16
+38U14*Get<13|29p19> 17|75s13
+X 17 rpn_calc.adb
+8U11*Rpn_Calc 8b11 96l5 96t13
+16V13 doProc{14|5A9} 16b13 16>20 16>38 16>40 31l8 31t14 84s29
+16e20 char{character} 20r12
+16a38 X{14|5A9} 22r23 24r23 26r23
+16a40 Y{14|5A9} 22r27 24r27 26r27
+17a7 ResultNum{14|5A9} 22m10 24m10 26m10 30r14
+18b7 falseKey{boolean} 28m10
+39V13 validChar{boolean} 39b13 39>23 53l8 53t17 79s16
+39e23 char{character} 42r12
+40b7 key{boolean} 44m10 46m10 48m10 50m10 52r14
+55K12 MyStkPkg[18|17] 56r8 58r16
+58r4 SignStack{18|19R14[55]} 76m29 76r29 80r31 81m20 81r20 82r31 83m20 83r20
+. 85m32 85r32 87r24 89m20 89r20
+59a4 mySignNum{14|5A9} 75m17 76r18 84m16 85r21
+60e4 charCheck{character} 68m18 71r13 72m26 74r22
+61e4 opVal{character} 78m29 79r26 84r36 86r19 88r19 90r19
+62b4 EOL{boolean} 68m29 69r10
+63a4 tempOne{14|5A9} 80m16 84r42
+64a4 tempTwo{14|5A9} 82m16 84r50
+X 18 stackpkg.ads
+13i9 Size{positive} 17|55r37
+15+14 ItemType 17|55r50
+17k9*StackPkg 17|6w6 55r28 18|46e13
+19R14 Stack 17|58r25[55]
+29U19 push 17|76s13[55] 85s16[55]
+32U19 pop 17|81s16[55] 83s16[55] 89s16[55]
+35V19 top{14|5A9} 17|80s27[55] 82s27[55] 87s20[55]
+

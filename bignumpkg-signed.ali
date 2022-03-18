@@ -1,0 +1,196 @@
+V "GNAT Lib v2014"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U bignumpkg.signed%b	bignumpkg-signed.adb	3fc34541 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W bignumpkg%s		bignumpkg.adb		bignumpkg.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U bignumpkg.signed%s	bignumpkg-signed.ads	54e84d07 EE OO PK IL
+W ada.tags%s		a-tags.adb		a-tags.ali
+W bignumpkg%s		bignumpkg.adb		bignumpkg.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181359 69f99942 ada.finalization%s
+D a-inteio.ads		20140406181359 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140406181358 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20140406181355 1a984740 ada.streams%s
+D a-tags.ads		20140406181357 dc4d0634 ada.tags%s
+D a-textio.ads		20140406181359 386df5d4 ada.text_io%s
+D a-tiinio.ads		20140406181359 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20140406181359 f9eb8f06 ada.unchecked_conversion%s
+D bignumpkg.ads		20180409174509 7bc27e49 bignumpkg%s
+D bignumpkg-signed.ads	20180410043020 2f2a334e bignumpkg.signed%s
+D bignumpkg-signed.adb	20180412032255 decf0a7f bignumpkg.signed%b
+D interfac.ads		20140406181359 69adb1b9 interfaces%s
+D i-cstrea.ads		20140406181357 febc86ed interfaces.c_streams%s
+D system.ads		20140406181356 bd760655 system%s
+D s-crtl.ads		20140406181356 2c012597 system.crtl%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-ficobl.ads		20140406181355 078245e4 system.file_control_block%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181359 4ff27390 system.finalization_root%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181357 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181359 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181355 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140406181355 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181357 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181355 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181357 b16154c2 system.storage_pools%s
+D s-traent.ads		20140406181355 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r23 2r6 2r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|46] 13|2w10 2r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27
+73I12*Field{integer}
+166U14*New_Line 13|400s7
+208U14*Put 13|393s10
+X 9 a-tiinio.ads
+66U14*Put 13|398s10[4|18]
+68i7 Width{8|73I12} 13|398r26[4|18]
+X 11 bignumpkg.ads
+5K9*BigNumPkg 41e14 12|3r9 11r52 12r51 46r5 13|14r14 418r5
+6A14*BigNum(integer) 12|5r30 13|55r10 55r22 55r38 55r50 56r17 56r29 58r17
+. 58r29 71r10 71r22 71r38 71r50 72r17 72r29 74r17 74r29 87r10 87r22 87r38
+. 87r50 88r17 88r30 90r17 90r30 103r10 103r22 103r38 103r50 104r17 104r30
+. 106r17 106r30 148r10 148r22 224r10 224r22 224r39 224r51 225r37 225r49 232r13
+. 232r25 232r42 232r54 233r37 233r49 240r13 240r25 246r13 246r25 284r10 284r22
+. 284r39 284r51 295r13 295r25 295r42 295r54 306r13 306r25 312r13 312r25 334r10
+. 334r22 334r39 334r51 335r37 335r49 338r13 338r25 338r42 338r54 341r37 341r52
+. 345r13 345r25 351r13 351r25 356r37 356r52 412r11
+8a9*Zero{6A14} 12|11r62
+9a9*One{6A14} 12|12r61
+18V19*"<"{boolean} 13|58s27 72s27 224s20 224s49 240s23 246s23 284s20 284s49
+. 306s23 312s23 334s20 334s49 345s23 351s23
+19V19*">"{boolean} 13|55s20 55s48 56s27 71s20 71s48 74s27 87s20 87s48 103s20
+. 103s48 148s20 232s23 232s52 295s23 295s52 338s23 338s52
+20V19*"<="{boolean} 13|90s27 104s27
+21V19*">="{boolean} 13|88s27 106s27
+23V19*"+"{6A14} 13|225s47 233s47
+24V19*"*"{6A14} 13|335s47 341s50 356s50
+29U19*Get 13|412s7
+32i9 Size{positive} 12|41r51 13|129r26 149r22 153r22 172r27 201r19 374r26
+. 384r19 392r16 397r23
+X 12 bignumpkg-signed.ads
+3K19*Signed 11|5k9 12|5E4 46l15 46e21 13|14b24 418l15 418t21
+5A9*Signed_BigNum<11|6A14> 7r21 8r20 10r26 11r20 11r37 12r19 12r36 17r25
+. 19r26 20r26 21r26 22r26 25r25 25r47 28r26 28r48 30r25 30r47 31r25 31r47
+. 32r25 32r47 34r26 38r30
+7a4*first{5A9} 44c4
+8a4*last{5A9} 45c4 13|55r29 55r57 71r29 71r57 87r29 87r57 103r29 103r57 148r29
+. 224r29 224r58 232r32 232r61 240r32 246r32 284r29 284r58 295r32 295r61 306r32
+. 312r32 334r29 334r58 338r32 338r61 345r32 351r32
+10a4*Minus_One{5A9} 41c4
+11a4*Zero{5A9}
+12a4*One{5A9} 13|256r32 287r30 299r30
+14X4*Signed_BigNumOverFlow 13|124r16 227r19 235r19 359r16
+17V13*toString{string}<11|16p18> 17>22 13|26b13 44l8 44t16
+17a22 X{5A9} 13|26b22
+19V14*"<"{boolean}<11|18p18> 19>19 19>22 13|52b14 60l9 60t11
+19a19 X{5A9} 13|52b19 55r17 56r24 58r24
+19a22 Y{5A9} 13|52b22 55r45 56r36 58r36
+20V14*">"{boolean}<11|19p18> 20>19 20>22 13|68b14 76l9 76t11
+20a19 X{5A9} 13|68b19 71r17 72r24 74r24
+20a22 Y{5A9} 13|68b22 71r45 72r36 74r36
+21V14*"<="{boolean}<11|20p18> 21>19 21>22 13|84b14 92l9 92t12
+21a19 X{5A9} 13|84b19 87r17 88r24 90r24
+21a22 Y{5A9} 13|84b22 87r45 88r37 90r37
+22V14*">="{boolean}<11|21p18> 22>19 22>22 13|100b14 108l9 108t12
+22a19 X{5A9} 13|100b19 103r17 104r24 106r24
+22a22 Y{5A9} 13|100b22 103r45 104r37 106r37
+25V13*negate{5A9} 25>21 13|116b13 135l8 135t14 241s21 247s21 307s21 313s21
+. 414s18
+25a21 X{5A9} 13|116b21 121r28 130r29
+28V13*abs_val{5A9} 28>22 13|143b13 158l8 158t15 339s18 340s18 348s21 354s21
+. 379s21
+28a22 X{5A9} 13|143b22 148r17 150r29 154r29
+30V14*"+"{5A9}<11|23p18> 30>18 30>21 13|213b14 263l9 263t11 317s28
+30a18 X{5A9} 13|213b18 224r17 225r44 232r20 233r44 240r20 241r28 243r21
+30a21 Y{5A9} 13|213b21 224r46 225r56 232r49 233r56 246r20 247r28 250r21
+31V14*"-"{5A9} 31>18 31>21 13|271b14 320l9 320t11
+31a18 X{5A9} 13|271b18 284r17 285r18 295r20 296r25 306r20 307r28 309r21
+31a21 Y{5A9} 13|271b21 276r38 284r46 295r49 297r18 312r20 313r28 315r21
+32V14*"*"{5A9}<11|24p18> 32>18 32>21 13|328b14 362l9 362t11
+32a18 X{5A9} 13|328b18 334r17 335r44 338r20 339r26 345r20 346r21 348r29
+32a21 Y{5A9} 13|328b21 334r46 335r56 338r49 340r26 351r20 352r21 354r29
+34U14*Put<11|30p19> 34>19 34>41 13|371b14 401l8 401t11
+34a19 Item{5A9} 13|371b19 373r34 378r10
+34i41 Width{natural} 13|371b41 392r30
+38U14*Get<11|29p19> 38<19 13|409b14 416l8 416t11
+38a19 Item{5A9} 13|409b19 412m18 412r18 413r10 414m10 414r25
+X 13 bignumpkg-signed.adb
+15i4 InternalBase{positive} 123r30 176r20 177r26 358r25
+117a7 limitNum{12|5A9} 121r39
+118a7 resultNum{12|5A9} 121m7 123r10 130m13 134r14
+119i7 count{natural} 121r17 121r30 121r48 123r20 127m10 127r19 129r19
+129i14 I{integer} 130r23 130r31
+144a7 limitNum{12|5A9} 150r36
+145a7 resultNum{12|5A9} 150m13 154m13 157r14
+149i14 I{integer} 150r23 150r31 150r45
+153i14 I{integer} 154r23 154r31
+168U14 plus_ov<11|27p19> 168b14 168>23 168>26 168<45 168<73 189l8 189t15
+. 254s10 256s13 259s13 285s10 287s13 290s13 297s10 299s13 302s13
+168a23 X{12|5A9} 173r25
+168a26 Y{12|5A9} 173r32
+168a45 Result{12|5A9} 183m10
+168b73 Overflow{boolean} 188m7
+169i7 Carry{natural} 173r17 178m13 180m13 188r19
+170i7 Sum{integer} 173m10 176r13 177m13 177r20 183r23
+172i11 I{integer} 173r27 173r34 183r17
+197V13 nineC{12|5A9} 197b13 197>20 205l8 205t13 248s22 251s22 276s32 289s22
+. 296s19 301s22
+197a20 X{12|5A9} 202r33
+198a7 ResultNum{12|5A9} 202m10 204r14
+199i7 nine{positive} 202r26
+201i11 I{integer} 202r20 202r35
+214a7 LimitNum{12|5A9} 226r29 234r29 259r32
+215a7 xNeg{12|5A9} 241m13 243m13 254r18
+216a7 yNeg{12|5A9} 247m13 248r28 250m13 251r28
+217a7 yNine{12|5A9} 248m13 251m13 254r24
+218b7 key{boolean} 254m42 255r13 256m47 259m52
+219a7 ResultNum{12|5A9} 225m10 226r13 229r20 233m10 234r13 237r20 254m31
+. 256r21 259r21
+220a7 finalNum{12|5A9} 256m37 257r20 259m42 260r20
+272a7 limitNum{12|5A9} 290r21 302r21
+273a7 ResultNum{12|5A9} 287m35 290m38 299m35 302m38 317m10 319r14
+274a7 xNeg{12|5A9} 307m13 309m13 317r23
+275a7 yNeg{12|5A9} 313m13 315m13 317r30
+276a7 yNine{12|5A9} 285r21 289m13 290r31 296m10 297r21 301m13 302r31
+277a7 tempNum{12|5A9} 285m28 287r21 289r28 297m28 299r21 301r28
+278b7 overFlow{boolean} 285m37 286r13 287m46 290m49 297m37 298r13 299m46
+. 302m49
+329a7 ResultNum{12|5A9} 335m10 341m10 356m10 358r10 361r14
+330a7 xAbs{12|5A9} 339m10 341r44 346m13 348m13 356r44
+331a7 yAbs{12|5A9} 340m10 341r59 352m13 354m13 356r59
+372a7 limitNum{12|5A9} 378r21
+373a7 tempNum{12|5A9} 379m10 379r29 380m10 380r24 385r13 398r14
+374i7 First{integer} 386m13 392r21 397r16
+384i11 I{integer} 385r21 386r22
+392i11 I{integer}
+397i11 I{integer} 398r22
+410a7 limitNum{12|5A9} 413r21
+

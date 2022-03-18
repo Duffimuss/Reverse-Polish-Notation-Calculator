@@ -1,0 +1,143 @@
+V "GNAT Lib v2014"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U bignumpkg%b		bignumpkg.adb		c041e3ea NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U bignumpkg%s		bignumpkg.ads		7bc27e49 EE OO PK IL
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181359 69f99942 ada.finalization%s
+D a-inteio.ads		20140406181359 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140406181358 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20140406181355 1a984740 ada.streams%s
+D a-tags.ads		20140406181357 dc4d0634 ada.tags%s
+D a-textio.ads		20140406181359 386df5d4 ada.text_io%s
+D a-tiinio.ads		20140406181359 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20140406181359 f9eb8f06 ada.unchecked_conversion%s
+D bignumpkg.ads		20180409174509 7bc27e49 bignumpkg%s
+D bignumpkg.adb		20180412025730 75a5e1d3 bignumpkg%b
+D interfac.ads		20140406181359 69adb1b9 interfaces%s
+D i-cstrea.ads		20140406181357 febc86ed interfaces.c_streams%s
+D system.ads		20140406181356 bd760655 system%s
+D s-crtl.ads		20140406181356 2c012597 system.crtl%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-ficobl.ads		20140406181355 078245e4 system.file_control_block%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181359 4ff27390 system.finalization_root%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181357 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181359 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181355 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140406181355 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181357 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181355 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181357 b16154c2 system.storage_pools%s
+D s-traent.ads		20140406181355 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|5r6 5r23 6r6 6r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|46] 12|6w10 6r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 12|5w10 5r27
+73I12*Field{integer}
+169U14*Skip_Line 12|138s13
+172V13*End_Of_Line{boolean} 12|137s16 157s20
+184V13*End_Of_File{boolean} 12|135s13
+206U14*Get 12|147s13
+208U14*Put 12|198s10
+215U14*Look_Ahead 12|140s13 158s10 166s7
+298X4*Data_Error 12|136r19 150r22 168r16
+X 9 a-tiinio.ads
+56U14*Get 12|161s10[4|18]
+58i7 Width{8|73I12} 12|161r23[4|18]
+66U14*Put 12|203s10[4|18]
+68i7 Width{8|73I12} 12|203r23[4|18]
+X 11 bignumpkg.ads
+5K9*BigNumPkg 32E9 41l5 41e14 12|8b14 207l5 207t14
+6A14*BigNum(integer) 8r25 9r25 11r26 12r26 16r30 18r31 19r31 20r31 21r31
+. 23r30 23r45 24r30 24r45 27r35 27r56 29r35 30r31 33c14 35r26 36r21 39r26
+. 40r26 12|24r25 44r26 56r26 61r26 66r26 72r25 72r40 74r16 89r30 89r51 115r25
+. 115r40 116r23 128r30 184r26
+8a9*Zero{6A14} 35c9 12|116r33
+9a9*One{6A14} 36c4 12|119r27
+11a9*First{6A14} 39c9
+12a9*Last{6A14} 40c9
+14X9*BigNumOverFlow 12|79r16
+16V18*toString{string} 16>27 12|24b13 42l8 42t16
+16a27 X{6A14} 12|24b22
+18V19*"<"{boolean} 18>24 18>27 12|44b14 54l9 54t11 58s21 63s25 68s21
+18a24 X{6A14} 12|44b19 47r13 49r16
+18a27 Y{6A14} 12|44b22 47r20 49r23
+19V19*">"{boolean} 19>24 19>27 12|56b14 59l9 59t11
+19a24 X{6A14} 12|56b19 58r19 58r28
+19a27 Y{6A14} 12|56b22 58r23 58r32
+20V19*"<="{boolean} 20>24 20>27 12|61b14 64l9 64t12
+20a24 X{6A14} 12|61b19 63r14 63r23
+20a27 Y{6A14} 12|61b22 63r18 63r27
+21V19*">="{boolean} 21>24 21>27 12|66b14 70l9 70t12
+21a24 X{6A14} 12|66b19 68r19
+21a27 Y{6A14} 12|66b22 68r23
+23V19*"+"{6A14} 23>23 23>26 12|72b14 82l9 82t11 119s25 120s27
+23a23 X{6A14} 12|72b18 76r16
+23a26 Y{6A14} 12|72b21 76r19
+24V19*"*"{6A14} 24>23 24>26 12|115b14 123l9 123t11
+24a23 X{6A14} 12|115b18 120r29
+24a26 Y{6A14} 12|115b21 118r22
+27U19*plus_ov 27>28 27>31 27<43 27<64 12|76s7 89b14 110l8 110t15
+27a28 X{6A14} 12|89b23 94r25
+27a31 Y{6A14} 12|89b26 94r32
+27a43 Result{6A14} 12|89b38 104m10
+27b64 Overflow{boolean} 12|89b59 109m7
+29U19*Get 29<24 12|128b14 178l8 178t11
+29a24 Item{6A14} 12|128b19 161m14 161r14 173m10 173r34 176m10
+30U19*Put 30>24 30>39 12|184b14 205l8 205t11
+30a24 Item{6A14} 12|184b19 190r13 203r14
+30i39 Width{natural} 12|184b34 197r30
+32i9 Size{positive} 33r33 36r32 12|46r19 93r27 156r19 173r17 175r19 185r26
+. 189r19 197r16 202r23
+X 12 bignumpkg.adb
+13i4 InternalBase{positive} 97r20 98r26
+46i11 I{integer} 47r15 47r22 49r18 49r25
+73b7 Overflow{boolean} 76m30 78r10
+74a7 Result{11|6A14} 76m22 81r14
+90i7 Carry{natural} 94r17 99m13 101m13 109r19
+91i7 Sum{integer} 94m10 97r13 98m13 98r20 104r23
+93i11 I{integer} 94r27 94r34 104r17
+116a7 Count{11|6A14} 118r13 119m10 119r19
+116a14 Result{11|6A14} 120m10 120r20 122r14
+129e7 Letter{character} 140m24 143r23 147m17 148r16 148r34 149r20 158m21
+. 160r20 166m18 167r10
+130b7 LineEnd{boolean} 140m32 158m29 159r20 166m26
+131i7 LastI{natural} 162m10 172r27 173r24 175r26
+156i11 I{integer} 161r19 162r19
+172i11 I{integer} 173r15 173r39
+175i11 I{integer} 176r15
+185i7 First{integer} 191m13 197r21 202r16
+189i11 I{integer} 190r18 191r22
+197i11 I{integer}
+202i11 I{integer} 203r19
+

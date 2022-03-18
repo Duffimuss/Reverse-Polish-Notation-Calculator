@@ -14,9 +14,31 @@ package body BigNumPkg is
 
    -- This is a stub routine
    -- You are to complete the implementation of this routine
+   -- I could not get the toString to work.
+   ------------------------------------------------------------------
+   -- Purpose: Converts a BigNum to a String
+   -- Parameters: X : Signed_BigNum to convert
+   -- Precondition:
+   -- Postcondition: Returns String of X
+   ------------------------------------------------------------------
    function toString(X: BigNum) return String is
+   --   count : Natural := 0;
    begin
-      return "";
+ --     loop
+--	 exit when X(count) /= 0;
+--	 count := count + 1;
+  --    end loop;
+  --    declare
+--	 resultStr : String(count..Size-1);
+--	 tempNum : Natural;
+   --   begin
+--	 for I in count..Size-1 loop
+--	    tempNum := tempNum + X(I);
+--	    resultStr(I) := Integer'Image(tempNum);
+--	 end loop;
+--	 return resultStr;
+   --   end;
+   return "";
    end toString;
 
    function "<"  (X, Y : BigNum) return Boolean is

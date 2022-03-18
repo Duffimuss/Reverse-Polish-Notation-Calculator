@@ -1,0 +1,37 @@
+V "GNAT Lib v2014"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV SPARK_05
+
+U stackpkg%b		stackpkg.adb		23da8997 NE OO PK GE IL
+
+U stackpkg%s		stackpkg.ads		bea847d4 BN EE NE OO PK GE IL
+
+D stackpkg.ads		20180409190517 bea847d4 stackpkg%s
+D stackpkg.adb		20180412032508 9d72ce43 stackpkg%b
+D system.ads		20140406181356 bd760655 system%s
+X 1 stackpkg.ads
+13i9 Size{positive} 39r42 2|29r22
+15+14 ItemType 29r32 35r44 39r51 2|38r27 69r37
+17k9*StackPkg 13z9 15z14 39E14 46l5 46e13 2|8b14 74l5 74t13
+19R14*Stack 25r31 26r31 29r53 32r36 35r30 41c14 44e19 2|16r26 27r25 38r48
+. 54r30 69r23
+21X9*Stack_Empty 2|57r16
+22X9*Stack_Full 2|41r16
+25V18*isEmpty{boolean} 25>27 2|16b13 19l8 19t15 56s10
+25r27 s{19R14} 2|16b22 18r14
+26V18*isFull{boolean} 26>27 2|27b13 30l8 30t14 40s10
+26r27 s{19R14} 2|27b21 29r14
+29U19*push 29>25 29=42 2|38b14 46l8 46t12
+29*25 item{15+14} 2|38b20 44r31
+29r42 s{19R14} 2|38b37 40r17 43m10 43r19 44m10 44r21
+32U19*pop 32=25 2|54b14 61l8 61t11
+32r25 s{19R14} 2|54b19 56r18 59m10 59r19
+35V19*top{15+14} 35>26 2|69b14 72l8 72t11
+35r26 s{19R14} 2|69b19 71r14 71r25
+39A14 StackElements(15+14)<integer> 42r28
+42a17 Elements{39A14} 2|44m12 71r16
+43i17 Top{natural} 2|18r16 29r16 43m12 43r21 44r23 59m12 59r21 71r27
+
